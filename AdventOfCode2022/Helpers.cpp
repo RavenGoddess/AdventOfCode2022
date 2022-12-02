@@ -4,7 +4,7 @@
 
 std::string GetInputPath(int day)
 {
-	bool test = true;
+	bool test = false;
 	std::filesystem::path p = std::filesystem::current_path().parent_path();
 	std::string path = p.string() + "\\input\\day" + std::to_string(day);
 
