@@ -61,23 +61,25 @@ long EvaluatePointsForShape(const GameRound& round, const bool key)
 			return 3;
 		}
 	}
+
+	return 0;
 }
 
 long EvaluatePointsForOutcome(const GameRound& round, const bool key)
 {
 	if (key)
 	{
-		if (round.ourMove == 'X')
-		{
-			return 0;
-		}
-		else if (round.ourMove == 'Y')
+		 if (round.ourMove == 'Y')
 		{
 			return 3;
 		}
 		else if (round.ourMove == 'Z')
 		{
 			return 6;
+		}
+		else
+		{
+			return 0;
 		}
 	}
 	else
@@ -100,6 +102,8 @@ char GetWinningShape(const char move)
 	{
 		return 'A';
 	}
+
+	return '0';
 }
 
 char GetLosingShape(const char move)
@@ -116,6 +120,7 @@ char GetLosingShape(const char move)
 	{
 		return 'B';
 	}
+	return '0';
 }
 
 long GivePointsForShape(const char move)

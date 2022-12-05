@@ -1,12 +1,11 @@
 #include "Day1.h"
 #include "Helpers.h"
 
-int Day1()
+void Results_Day1()
 {
 	std::vector<long> calorieSummaries = ProcessInput(GetInputPath(1));
 
 	std::cout << "Day 1 results: " << GetCalorieCount(calorieSummaries) << ", " << GetCalorieCountSummary(calorieSummaries) << "\n";
-	return 0;
 }
 
 long GetCalorieCount(const std::vector<long>& calorieSummaries)

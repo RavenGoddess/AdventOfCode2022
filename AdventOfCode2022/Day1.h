@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 
-int Day1();
+void Results_Day1();
 
 long GetCalorieCount(const std::vector<long>& calorieSummaries);
 long GetCalorieCountSummary(const std::vector<long>& calorieSummaries);
